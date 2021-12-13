@@ -1,13 +1,14 @@
-/*have to animate author's portrait*/
-
-#wrapper {
+body {
+  height: 100%;
+}
+#container {
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 1fr 1fr;
   width: auto;
-  height: 100vh;
-  padding: 30px;
+  height: 100%;
+  padding: 30px 30px;
   background-color: #16a085;
 }
 #quote-box {
@@ -17,11 +18,11 @@
   background-color: white;
   grid-template-columns: repeat(6, 1fr);
   gap: 0px 0px;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 3em 3em;
   grid-auto-rows: minmax(100px, auto);
   border-radius: 5px;
   padding: 20px 20px;
-  margin: 3% auto auto auto;
+  margin: auto;
 }
 #text {
   grid-row: 1/2;
@@ -31,8 +32,9 @@
 
 #author {
   grid-row: 2/3;
-  grid-column: 5/7;
+  grid-column: 3/7;
   margin: 0px;
+  text-align: right;
 }
 #new-quote {
   grid-row: 3/4;
@@ -43,14 +45,15 @@
   background-color: #16a085;
   box-shadow: none !important;
 }
-
-#tweet-quote {
-  grid-column: 1/4;
-  grid-row: 3/4;
-  display: flex;
-}
 #portrait {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 235px;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
 }
 #photo {
   width: 170px;
@@ -60,8 +63,14 @@
   margin: auto;
   text-align: center;
 }
+#error-message {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+}
 @media (max-width: 768px) {
-  #wrapper {
+  #container {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,4 +1,4 @@
-var colors = [
+const colors = [
   "#16a085",
   "#27ae60",
   "#2c3e50",
@@ -10,7 +10,10 @@ var colors = [
   "#472E32",
   "#BDBB99",
   "#77B1A9",
-  "#73A857"
+  "#73A857",
+  "#001f3f",
+  "#0074D9",
+  "#3D9970",
+  "#AAAAAA"
 ];
-
 export { colors };
